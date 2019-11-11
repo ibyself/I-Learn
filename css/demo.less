@@ -1,0 +1,102 @@
+*{margin:0;padding:0;}
+
+@total-width:750;
+
+html{
+    font-size:100vw/@total-width*40;
+    background-color: #eff0f4;
+}
+
+a{text-decoration:none;}
+
+.w{
+    width:693/40rem;
+    margin: 0 auto;
+}
+.top-bar:extend(.w){
+    display: flex;
+    height:174/40rem;
+    line-height:174/40rem;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color:#656565;font-size:50/40rem;
+        i{
+            color:#999;
+            font-size:40/40rem;
+        }
+    }
+    
+}
+.banner:extend(.w){
+    img{width:100%;vertical-align:top;}
+}
+.nav:extend(.w){
+    height:330/40rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+    a{
+        width:327/40rem;
+        height:102/40rem;
+        line-height:102/40rem;
+        border-radius:10/40rem;
+        color:white;
+        i{
+            margin:0 35/40rem 0 38/40rem;
+        }
+        font-size:30/40rem;
+    }
+    .cour{background-color: #f97053;}
+    .star{background-color: #c657ff;}
+    .sub{background-color: #ff3971;}
+    .download{background-color: #1d9bfe;}
+}
+.course-list:extend(.w){
+    box-sizing: border-box;
+    height:392/40rem;
+    display:flex;
+    flex-flow:column;
+    justify-content:space-between;
+    margin-bottom: 30/40rem;
+    .course-title{
+        display:flex;
+        justify-content:space-between;
+        margin-bottom: 35/40rem;
+        a{color:#656565;font-size:33/40rem;}
+        h2{font-size:33/40rem;padding-left:19/40rem;border-left:1px solid #3a84ff;}
+    }
+    .item-list{
+        width:720/40rem;
+        display: flex;
+        overflow: auto;
+        .item{
+            flex:none;
+            box-sizing:border-box;
+            width:327/40rem;
+            height:321/40rem;
+            background-color:#fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            border-radius:5/40rem;
+            padding:22/40rem;
+            display: flex;
+            justify-content: space-evenly;
+            flex-flow:column;
+            border-radius:10/40rem;
+            margin-right: 20/40rem;
+            img{width:100%;vertical-align:top;}
+            h2{font-size:30/40rem;color:#24253d;}
+            .user-info{
+                display: flex;
+                align-items: center;
+                .user-img{width:43/40rem;height:42/40rem;}
+                .user-name{
+                    font-size:32/40rem;
+                    color:#969393;
+                    margin-left: 10/40rem;
+                }
+            }
+        }
+}
+}
